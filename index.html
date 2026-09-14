@@ -18,7 +18,7 @@
     rel="stylesheet">
 
   <!-- Estilos Customizados -->
-  <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Favicon Oficial -->
   <link rel="shortcut icon" href="assets/default_Branco.webp" type="image/png">
@@ -62,7 +62,8 @@
       <!-- Logo Oficial IEBI -->
       <a href="#hero" class="logo-brand" id="header-logo"
         aria-label="IEBI - Igreja Evangélica Batista de Intermares - Página Inicial">
-        <img src="assets/Logo.webp" width="200" height="50"  alt="IEBI - Igreja Evangélica Batista de Intermares" class="site-logo-img">
+        <img src="assets/Logo.webp" width="200" height="50" alt="IEBI - Igreja Evangélica Batista de Intermares"
+          class="site-logo-img">
       </a>
 
       <!-- Menu de Navegação Desktop & Mobile -->
@@ -73,7 +74,6 @@
           <span>Células</span>
           <span class="nav-badge-pill">Nos Lares</span>
         </a>
-        <a href="#cultos" class="nav-link">Cultos & Agenda</a>
         <a href="#mensagens" class="nav-link">Mensagens</a>
 
         <!-- Dropdown "Mais" para Navegação Completa -->
@@ -88,20 +88,6 @@
           </button>
 
           <div class="dropdown-menu-card" id="dropdown-menu-panel">
-            <a href="#ministerios" class="dropdown-item">
-              <div class="dropdown-item-icon">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </div>
-              <div class="dropdown-item-info">
-                <span class="dropdown-item-title">Ministérios</span>
-                <span class="dropdown-item-desc">Kids, Jovens, Famílias, Ação Social e Louvor</span>
-              </div>
-            </a>
 
             <a href="#eventos" class="dropdown-item">
               <div class="dropdown-item-icon">
@@ -189,8 +175,8 @@
          ========================================== -->
     <section class="hero-section" id="hero">
       <div class="hero-bg-wrapper">
-        <img src="assets/images/hero_worship.webp" width="800" height="600"  alt="Comunidade da Igreja em adoração e comunhão calorosa"
-          class="hero-bg-img" fetchpriority="high">
+        <img src="assets/images/hero_worship.webp" width="800" height="600"
+          alt="Comunidade da Igreja em adoração e comunhão calorosa" class="hero-bg-img" fetchpriority="high">
         <div class="hero-overlay"></div>
       </div>
 
@@ -219,11 +205,13 @@
             </svg>
             Encontre uma Célula
           </a>
-          <a href="#cultos" class="btn btn-outline-white btn-lg" id="hero-btn-visit">
+          <a href="#sobre" class="btn btn-outline-white btn-lg" id="hero-btn-visit">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" />
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
             </svg>
-            Cultos no Templo
+            Sobre a IEBI
           </a>
           <a href="#oracao" class="btn btn-outline-white btn-lg" id="hero-btn-prayer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -302,20 +290,28 @@
 
             <div class="about-story-paragraphs">
               <p class="about-text">
-                A <strong>Igreja Evangélica Batista de Intermares (IEBI)</strong> nasceu no coração de Deus a partir de um pequeno grupo de oração realizado em uma garagem em 1998. Ao longo de mais de duas décadas e meia, temos testemunhado a fidelidade do Senhor transformando vidas, restaurando famílias e edificando uma comunidade viva e acolhedora.
+                A <strong>Igreja Evangélica Batista de Intermares (IEBI)</strong> nasceu no coração de Deus a partir de
+                um pequeno grupo de oração realizado em uma garagem em 1998. Ao longo de mais de duas décadas e meia,
+                temos testemunhado a fidelidade do Senhor transformando vidas, restaurando famílias e edificando uma
+                comunidade viva e acolhedora.
               </p>
               <p class="about-text">
-                Sob a liderança pastoral do <strong>Pr. Augusto Rodrigues e Pra. Ivete Rodrigues</strong>, nossa missão é amar a Deus sobre todas as coisas, proclamar o Evangelho com fidelidade bíblica e ser uma família de fé onde cada pessoa encontra refúgio, comunhão e propósito em Cristo.
+                Sob a liderança pastoral do <strong>Pr. Augusto Rodrigues e Pra. Ivete Rodrigues</strong>, nossa missão
+                é amar a Deus sobre todas as coisas, proclamar o Evangelho com fidelidade bíblica e ser uma família de
+                fé onde cada pessoa encontra refúgio, comunhão e propósito em Cristo.
               </p>
               <p class="about-text">
-                Seja você alguém em busca de um recomeço espiritual, uma família que procura um lar na fé ou um visitante que chega pela primeira vez: <strong>as portas da nossa casa e os nossos corações estão abertos para você!</strong>
+                Seja você alguém em busca de um recomeço espiritual, uma família que procura um lar na fé ou um
+                visitante que chega pela primeira vez: <strong>as portas da nossa casa e os nossos corações estão
+                  abertos para você!</strong>
               </p>
             </div>
           </div>
 
           <!-- Imagem e Destaque Pastoral (Direita) -->
           <div class="pastor-image-wrapper">
-            <img src="assets/images/pastor_welcome.webp" width="800" height="600" alt="Pastor Presidente da IEBI" loading="lazy">
+            <img src="assets/images/pastor_welcome.webp" width="800" height="600" alt="Pastor Presidente da IEBI"
+              loading="lazy">
             <div class="pastor-tag-floating">
               <div class="pastor-tag-name">Pr. Augusto Rodrigues & Pra. Ivete Rodrigues</div>
               <div class="pastor-tag-role">Pastores Presidentes da IEBI</div>
@@ -342,7 +338,8 @@
               </div>
 
               <!-- Ponto 1998 -->
-              <button class="stepper-step active" data-target="panel-1998" data-index="0" role="tab" aria-selected="true" id="tab-1998" aria-controls="panel-1998">
+              <button class="stepper-step active" data-target="panel-1998" data-index="0" role="tab"
+                aria-selected="true" id="tab-1998" aria-controls="panel-1998">
                 <div class="stepper-node">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -354,7 +351,8 @@
               </button>
 
               <!-- Ponto 1999 -->
-              <button class="stepper-step" data-target="panel-1999" data-index="1" role="tab" aria-selected="false" id="tab-1999" aria-controls="panel-1999">
+              <button class="stepper-step" data-target="panel-1999" data-index="1" role="tab" aria-selected="false"
+                id="tab-1999" aria-controls="panel-1999">
                 <div class="stepper-node">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10" />
@@ -366,7 +364,8 @@
               </button>
 
               <!-- Ponto 2002 -->
-              <button class="stepper-step" data-target="panel-2002" data-index="2" role="tab" aria-selected="false" id="tab-2002" aria-controls="panel-2002">
+              <button class="stepper-step" data-target="panel-2002" data-index="2" role="tab" aria-selected="false"
+                id="tab-2002" aria-controls="panel-2002">
                 <div class="stepper-node">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
@@ -378,10 +377,12 @@
               </button>
 
               <!-- Ponto 2010 -->
-              <button class="stepper-step" data-target="panel-2010" data-index="3" role="tab" aria-selected="false" id="tab-2010" aria-controls="panel-2010">
+              <button class="stepper-step" data-target="panel-2010" data-index="3" role="tab" aria-selected="false"
+                id="tab-2010" aria-controls="panel-2010">
                 <div class="stepper-node">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
                 <span class="stepper-year">2010</span>
@@ -389,7 +390,8 @@
               </button>
 
               <!-- Ponto 2013 -->
-              <button class="stepper-step" data-target="panel-2013" data-index="4" role="tab" aria-selected="false" id="tab-2013" aria-controls="panel-2013">
+              <button class="stepper-step" data-target="panel-2013" data-index="4" role="tab" aria-selected="false"
+                id="tab-2013" aria-controls="panel-2013">
                 <div class="stepper-node">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -403,10 +405,12 @@
               </button>
 
               <!-- Ponto 2014 -->
-              <button class="stepper-step" data-target="panel-2014" data-index="5" role="tab" aria-selected="false" id="tab-2014" aria-controls="panel-2014">
+              <button class="stepper-step" data-target="panel-2014" data-index="5" role="tab" aria-selected="false"
+                id="tab-2014" aria-controls="panel-2014">
                 <div class="stepper-node">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                   </svg>
                 </div>
                 <span class="stepper-year">2014</span>
@@ -435,7 +439,9 @@
 
                 <h4 class="timeline-showcase-title">O Primeiro Culto na Garagem</h4>
                 <p class="timeline-showcase-text">
-                  Nossa igreja surgiu como fruto do trabalho missionário da <strong>Igreja Evangélica Batista de João Pessoa</strong> que, através de um pequeno grupo de irmãos cheios de fé, realizou o primeiro culto na garagem de uma casa em Intermares, Cabedelo - PB.
+                  Nossa igreja surgiu como fruto do trabalho missionário da <strong>Igreja Evangélica Batista de João
+                    Pessoa</strong> que, através de um pequeno grupo de irmãos cheios de fé, realizou o primeiro culto
+                  na garagem de uma casa em Intermares, Cabedelo - PB.
                 </p>
 
                 <div class="timeline-showcase-footer">
@@ -448,9 +454,13 @@
                   </span>
 
                   <div class="timeline-nav-controls">
-                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-1999" aria-label="Avançar para 1999">
+                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-1999"
+                      aria-label="Avançar para 1999">
                       <span>Próximo (1999)</span>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -475,7 +485,9 @@
 
                 <h4 class="timeline-showcase-title">Mudança para a Av. Mar Vermelho</h4>
                 <p class="timeline-showcase-text">
-                  Após um ano de reuniões e novos convertidos, o trabalho foi estabelecido formalmente como <strong>congregação</strong> e transferiu suas atividades para a principal avenida do bairro (Av. Mar Vermelho), expandindo sua visibilidade e acolhimento.
+                  Após um ano de reuniões e novos convertidos, o trabalho foi estabelecido formalmente como
+                  <strong>congregação</strong> e transferiu suas atividades para a principal avenida do bairro (Av. Mar
+                  Vermelho), expandindo sua visibilidade e acolhimento.
                 </p>
 
                 <div class="timeline-showcase-footer">
@@ -488,13 +500,21 @@
                   </span>
 
                   <div class="timeline-nav-controls">
-                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-1998" aria-label="Voltar para 1998">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-1998"
+                      aria-label="Voltar para 1998">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
                       <span>1998</span>
                     </button>
-                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2002" aria-label="Avançar para 2002">
+                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2002"
+                      aria-label="Avançar para 2002">
                       <span>2002</span>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -519,7 +539,9 @@
 
                 <h4 class="timeline-showcase-title">Posse do Terreno & As Primeiras Tendas</h4>
                 <p class="timeline-showcase-text">
-                  A congregação tomou posse de um terreno próprio doado pela prefeitura de Cabedelo. Para dar continuidade imediata às celebrações, foram instaladas tendas temporárias que testemunharam cultos cheios do Espírito Santo e intenso fervor espiritual.
+                  A congregação tomou posse de um terreno próprio doado pela prefeitura de Cabedelo. Para dar
+                  continuidade imediata às celebrações, foram instaladas tendas temporárias que testemunharam cultos
+                  cheios do Espírito Santo e intenso fervor espiritual.
                 </p>
 
                 <div class="timeline-showcase-footer">
@@ -532,13 +554,21 @@
                   </span>
 
                   <div class="timeline-nav-controls">
-                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-1999" aria-label="Voltar para 1999">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-1999"
+                      aria-label="Voltar para 1999">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
                       <span>1999</span>
                     </button>
-                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2010" aria-label="Avançar para 2010">
+                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2010"
+                      aria-label="Avançar para 2010">
                       <span>2010</span>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -563,7 +593,9 @@
 
                 <h4 class="timeline-showcase-title">1º Templo de Alvenaria & Emancipação da IEBI</h4>
                 <p class="timeline-showcase-text">
-                  Com a construção do primeiro templo de alvenaria concluída, realizou-se o culto solene de emancipação. A comunidade passou a se chamar oficialmente <strong>Igreja Evangélica Batista de Intermares (IEBI)</strong>, inaugurando uma nova era de maturidade e governo espiritual.
+                  Com a construção do primeiro templo de alvenaria concluída, realizou-se o culto solene de emancipação.
+                  A comunidade passou a se chamar oficialmente <strong>Igreja Evangélica Batista de Intermares
+                    (IEBI)</strong>, inaugurando uma nova era de maturidade e governo espiritual.
                 </p>
 
                 <div class="timeline-showcase-footer">
@@ -576,13 +608,21 @@
                   </span>
 
                   <div class="timeline-nav-controls">
-                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-2002" aria-label="Voltar para 2002">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-2002"
+                      aria-label="Voltar para 2002">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
                       <span>2002</span>
                     </button>
-                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2013" aria-label="Avançar para 2013">
+                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2013"
+                      aria-label="Avançar para 2013">
                       <span>2013</span>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -607,7 +647,9 @@
 
                 <h4 class="timeline-showcase-title">Transição Celular & Obras do Megatemplo</h4>
                 <p class="timeline-showcase-text">
-                  Nossa igreja adotou a estrutura de <strong>Igreja em Células na visão do MDA</strong> (Discipulado Um a Um e pastoreio nos lares), e em conjunto iniciou a construção do grande templo com arquitetura contemporânea e acústica tratada para acolher o constante crescimento.
+                  Nossa igreja adotou a estrutura de <strong>Igreja em Células na visão do MDA</strong> (Discipulado Um
+                  a Um e pastoreio nos lares), e em conjunto iniciou a construção do grande templo com arquitetura
+                  contemporânea e acústica tratada para acolher o constante crescimento.
                 </p>
 
                 <div class="timeline-showcase-footer">
@@ -620,13 +662,21 @@
                   </span>
 
                   <div class="timeline-nav-controls">
-                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-2010" aria-label="Voltar para 2010">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-2010"
+                      aria-label="Voltar para 2010">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
                       <span>2010</span>
                     </button>
-                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2014" aria-label="Avançar para 2014">
+                    <button class="btn-timeline-nav btn-timeline-next" data-goto="panel-2014"
+                      aria-label="Avançar para 2014">
                       <span>2014</span>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -646,12 +696,15 @@
                     </svg>
                     <span>Junho de 2014</span>
                   </div>
-                  <span class="timeline-tag-highlight" style="background:#fef3c7; color:#b45309; border-color:#fde68a;">Templo Consagrado</span>
+                  <span class="timeline-tag-highlight"
+                    style="background:#fef3c7; color:#b45309; border-color:#fde68a;">Templo Consagrado</span>
                 </div>
 
                 <h4 class="timeline-showcase-title">Inauguração do Templo para 800 Pessoas</h4>
                 <p class="timeline-showcase-text">
-                  Em uma celebração vibrante de gratidão a Deus, inauguramos o novo templo com capacidade para <strong>oitocentas pessoas</strong>. Hoje vivemos a plenitude desse propósito: celebrar a Deus no templo e cuidar de vidas de casa em casa!
+                  Em uma celebração vibrante de gratidão a Deus, inauguramos o novo templo com capacidade para
+                  <strong>oitocentas pessoas</strong>. Hoje vivemos a plenitude desse propósito: celebrar a Deus no
+                  templo e cuidar de vidas de casa em casa!
                 </p>
 
                 <div class="timeline-showcase-footer">
@@ -664,8 +717,12 @@
                   </span>
 
                   <div class="timeline-nav-controls">
-                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-2013" aria-label="Voltar para 2013">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+                    <button class="btn-timeline-nav btn-timeline-prev" data-goto="panel-2013"
+                      aria-label="Voltar para 2013">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
                       <span>2013</span>
                     </button>
                   </div>
@@ -675,47 +732,7 @@
           </div>
         </div>
 
-        <!-- Bloco 3: Guia do Primeiro Visitante -->
-        <div class="visitor-guide-box">
-          <div class="section-tag section-tag-dark">Como Funciona Nossa Igreja?</div>
-          <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; margin-bottom: 0.5rem;">
-            Dois Ambientes, Uma Só Família
-          </h3>
-          <p style="color: #cbd5e1; font-size: 1rem; max-width: 700px;">
-            A vida na IEBI acontece de forma integrada: nos reunimos em grande estilo nos cultos e nos conectamos de
-            perto nos lares.
-          </p>
 
-          <div class="visitor-grid">
-            <div class="visitor-step">
-              <div class="visitor-step-num">1</div>
-              <h4 class="visitor-step-title">Celebração no Templo</h4>
-              <p class="visitor-step-desc">Aos domingos e quartas, todas as células se juntam no templo para grande
-                louvor coletivo e pregação da Palavra.</p>
-            </div>
-
-            <div class="visitor-step">
-              <div class="visitor-step-num">2</div>
-              <h4 class="visitor-step-title">Encontro na Célula</h4>
-              <p class="visitor-step-desc">Durante a semana, nos reunimos na casa de um irmão com pessoas da sua mesma
-                faixa de idade para oração, estudo e comunhão.</p>
-            </div>
-
-            <div class="visitor-step">
-              <div class="visitor-step-num">3</div>
-              <h4 class="visitor-step-title">Cuidado Pessoal</h4>
-              <p class="visitor-step-desc">Na célula você ganha amigos para a vida inteira, recebe apoio em momentos
-                difíceis e descobre seus dons.</p>
-            </div>
-
-            <div class="visitor-step">
-              <div class="visitor-step-num">4</div>
-              <h4 class="visitor-step-title">Espaço para Todos</h4>
-              <p class="visitor-step-desc">Temos células para crianças, adolescentes, universitários, famílias,
-                mulheres, homens e melhor idade.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -725,22 +742,20 @@
     <section class="section-padding" id="celulas">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Vida em Comunidade & Discipulado</div>
+          <div class="section-tag">Vida em Célula</div>
           <h2 class="section-title">Células IEBI: Um Lugar para Cada Fase da Vida</h2>
           <p class="section-subtitle">
-            Descubra a célula feita sob medida para a sua idade e momento de vida. Encontre o grupo mais próximo da sua
-            residência e venha participar!
+            Células por faixa etária: Descubra o grupo ideal para você e sua família. Encontre o grupo mais próximo da
+            sua residência e venha participar!
           </p>
         </div>
 
         <!-- Banner Dinâmico da Visão Celular -->
         <div class="cells-intro-banner">
           <div>
-            <div class="cells-intro-quote">"Grandes o bastante para impactar a cidade, pequenos o suficiente para cuidar
-              de você."</div>
+            <div class="cells-intro-quote">"Em uma célula, você nunca será só um número."</div>
             <p class="cells-intro-text">
-              Em uma célula, ninguém é um número. Você é conhecido pelo nome, tem voz para tirar dúvidas da Bíblia,
-              recebe oração e desfruta de um lanche saboroso em um ambiente descontraído.
+              Você é conhecido pelo nome, tem liberdade para compartilhar a vida, tirar suas dúvidas sobre a Palavra e receber oração em um ambiente de amizade e cuidado verdadeiro.
             </p>
             <div class="cells-stats-row">
               <div class="cell-stat-item">
@@ -795,330 +810,351 @@
           </div>
         </div>
 
-        <!-- Os 4 Pilares do DNA Celular da IEBI -->
-        <div class="cells-pillars-wrapper">
-          <div class="section-header text-center" style="margin-bottom: 2rem;">
+        <!-- Os 4 Pilares da Visão Celular da IEBI (Stepper & Card Interativo) -->
+        <div class="cells-pillars-wrapper" id="dna-trilho-section">
+          <div class="section-header text-center" style="margin-bottom: 2.25rem;">
             <div class="section-tag">Nosso DNA Celular</div>
-            <h3 class="section-title" style="font-size: 1.85rem;">Os 4 Pilares da Vida em Célula</h3>
-            <p class="section-subtitle" style="font-size: 0.95rem;">
-              O modelo bíblico do Novo Testamento vivido de casa em casa para cuidar de você e da sua família.
+            <h3 class="section-title" style="font-size: 2.1rem;">Os 4 Pilares da Visão Celular</h3>
+            <p class="section-subtitle" style="font-size: 0.95rem; max-width: 720px; margin: 0 auto;">
+              Esse processo forma o trilho por onde o discípulo caminha, amadurece e se torna um multiplicador:
             </p>
           </div>
 
-          <div class="cells-dna-grid">
-            <div class="pillar-card-cell">
-              <div class="pillar-icon-cell">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
+          <!-- Linha do Trilho / Stepper dos 4 Pilares -->
+          <div class="dna-stepper-container">
+            <div class="dna-stepper-track" role="tablist" aria-label="Trilho dos 4 Pilares da Visão Celular">
+              <!-- Linha de Fundo e Progresso -->
+              <div class="dna-stepper-line-bg">
+                <div class="dna-stepper-line-progress" id="dna-stepper-progress"></div>
               </div>
-              <h4 class="pillar-title-cell">Células nos Lares</h4>
-              <p class="pillar-desc-cell">Pequenos grupos acolhedores espalhados pelos bairros para oração, estudo da Palavra e comunhão sincera de casa em casa.</p>
-            </div>
 
-            <div class="pillar-card-cell">
-              <div class="pillar-icon-cell">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg>
-              </div>
-              <h4 class="pillar-title-cell">Todas as Gerações</h4>
-              <p class="pillar-desc-cell">Ambientes direcionados para crianças, adolescentes, jovens, famílias, mulheres, homens e melhor idade.</p>
-            </div>
+              <!-- Ponto 1: Ganhar -->
+              <button class="dna-stepper-step active" data-target="dna-panel-ganhar" data-index="0" role="tab"
+                aria-selected="true" id="tab-dna-ganhar" aria-controls="dna-panel-ganhar">
+                <div class="dna-stepper-node">
+                  <span class="dna-node-num">1</span>
+                </div>
+                <span class="dna-stepper-title">Ganhar</span>
+                <span class="dna-stepper-label">Evangelismo</span>
+              </button>
 
-            <div class="pillar-card-cell">
-              <div class="pillar-icon-cell">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              </div>
-              <h4 class="pillar-title-cell">Discipulado Um a Um</h4>
-              <p class="pillar-desc-cell">Acompanhamento pessoal e mentoria espiritual na visão do MDA para ninguém caminhar sozinho.</p>
-            </div>
+              <!-- Ponto 2: Consolidar -->
+              <button class="dna-stepper-step" data-target="dna-panel-consolidar" data-index="1" role="tab"
+                aria-selected="false" id="tab-dna-consolidar" aria-controls="dna-panel-consolidar">
+                <div class="dna-stepper-node">
+                  <span class="dna-node-num">2</span>
+                </div>
+                <span class="dna-stepper-title">Consolidar</span>
+                <span class="dna-stepper-label">Raízes</span>
+              </button>
 
-            <div class="pillar-card-cell">
-              <div class="pillar-icon-cell">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M2 12h20" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </div>
-              <h4 class="pillar-title-cell">Amor Prático & Missões</h4>
-              <p class="pillar-desc-cell">Servindo nossa comunidade, socorrendo necessidades e alcançando nossa cidade com a graça de Jesus.</p>
+              <!-- Ponto 3: Treinar -->
+              <button class="dna-stepper-step" data-target="dna-panel-treinar" data-index="2" role="tab"
+                aria-selected="false" id="tab-dna-treinar" aria-controls="dna-panel-treinar">
+                <div class="dna-stepper-node">
+                  <span class="dna-node-num">3</span>
+                </div>
+                <span class="dna-stepper-title">Treinar</span>
+                <span class="dna-stepper-label">Discipulado</span>
+              </button>
+
+              <!-- Ponto 4: Enviar -->
+              <button class="dna-stepper-step" data-target="dna-panel-enviar" data-index="3" role="tab"
+                aria-selected="false" id="tab-dna-enviar" aria-controls="dna-panel-enviar">
+                <div class="dna-stepper-node">
+                  <span class="dna-node-num">4</span>
+                </div>
+                <span class="dna-stepper-title">Enviar</span>
+                <span class="dna-stepper-label">Multiplicação</span>
+              </button>
             </div>
           </div>
-        </div>
 
-        <!-- Filtros de Faixa Etária de Célula -->
-        <div class="ministry-filters">
-          <button class="filter-btn cell-filter-btn active" data-cell-filter="all">Todas as Células</button>
-          <button class="filter-btn cell-filter-btn" data-cell-filter="kids">Crianças (Kids: 0-11)</button>
-          <button class="filter-btn cell-filter-btn" data-cell-filter="teens">Adolescentes (Teens: 12-17)</button>
-          <button class="filter-btn cell-filter-btn" data-cell-filter="youth">Jovens (18-29 anos)</button>
-          <button class="filter-btn cell-filter-btn" data-cell-filter="family">Famílias & Casais</button>
-          <button class="filter-btn cell-filter-btn" data-cell-filter="women">Mulheres</button>
-          <button class="filter-btn cell-filter-btn" data-cell-filter="men">Homens</button>
-          <button class="filter-btn cell-filter-btn" data-cell-filter="senior">Melhor Idade (60+)</button>
+          <!-- O Card Único Interativo de Exibição dos Pilares -->
+          <div class="dna-single-display" id="dna-single-display">
+            <!-- Painel 1: Ganhar -->
+            <div class="dna-single-panel active" id="dna-panel-ganhar" role="tabpanel" aria-labelledby="tab-dna-ganhar">
+              <div class="dna-card-showcase">
+                <div class="dna-showcase-header">
+                  <div class="dna-step-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <line x1="20" y1="8" x2="20" y2="14" />
+                      <line x1="23" y1="11" x2="17" y2="11" />
+                    </svg>
+                    <span>1º Pilar da Visão</span>
+                  </div>
+                  <span class="dna-tag-highlight">Evangelismo Intencional</span>
+                </div>
+
+                <h4 class="dna-showcase-title">Ganhar: Alcançando Vidas com Amor e Testemunho</h4>
+                <p class="dna-showcase-text">
+                  A célula deve ser um ambiente de braços abertos. O foco não é apenas manter os que já estão na igreja reunidos, mas alcançar novas vidas de forma natural e relacional. Isso acontece através do testemunho no dia a dia, da oração intencional por amigos e do convite para que participem do ambiente acolhedor da célula.
+                </p>
+
+                <div class="dna-showcase-footer">
+                  <span class="dna-impact">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                      <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    Propósito: Conectar corações a Cristo e à família da fé
+                  </span>
+
+                  <div class="dna-nav-controls">
+                    <button class="btn-dna-nav btn-dna-next" data-goto="dna-panel-consolidar" aria-label="Avançar para Consolidar">
+                      <span>Próximo (2. Consolidar)</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Painel 2: Consolidar -->
+            <div class="dna-single-panel" id="dna-panel-consolidar" role="tabpanel" aria-labelledby="tab-dna-consolidar">
+              <div class="dna-card-showcase">
+                <div class="dna-showcase-header">
+                  <div class="dna-step-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <polyline points="9 12 11 14 15 10" />
+                    </svg>
+                    <span>2º Pilar da Visão</span>
+                  </div>
+                  <span class="dna-tag-highlight">Criação de Raízes</span>
+                </div>
+
+                <h4 class="dna-showcase-title">Consolidar: O Cuidado de Perto nos Primeiros Passos</h4>
+                <p class="dna-showcase-text">
+                  É a etapa do "cuidado de perto". Quando alguém novo chega, o pilar da consolidação garante que essa pessoa não se sinta perdida. Ela é acompanhada, orientada nos primeiros passos da fé e integrada à comunhão, garantindo que crie raízes sólidas na comunidade.
+                </p>
+
+                <div class="dna-showcase-footer">
+                  <span class="dna-impact">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                      <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    Propósito: Acolher, orientar e enraizar vidas na comunhão
+                  </span>
+
+                  <div class="dna-nav-controls">
+                    <button class="btn-dna-nav btn-dna-prev" data-goto="dna-panel-ganhar" aria-label="Voltar para Ganhar">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
+                      <span>1. Ganhar</span>
+                    </button>
+                    <button class="btn-dna-nav btn-dna-next" data-goto="dna-panel-treinar" aria-label="Avançar para Treinar">
+                      <span>Próximo (3. Treinar)</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Painel 3: Treinar -->
+            <div class="dna-single-panel" id="dna-panel-treinar" role="tabpanel" aria-labelledby="tab-dna-treinar">
+              <div class="dna-card-showcase">
+                <div class="dna-showcase-header">
+                  <div class="dna-step-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                    <span>3º Pilar da Visão</span>
+                  </div>
+                  <span class="dna-tag-highlight">Edificação e Discipulado</span>
+                </div>
+
+                <h4 class="dna-showcase-title">Treinar: Formando Ministros Ativos e Discipuladores</h4>
+                <p class="dna-showcase-text">
+                  A visão DNA entende que a igreja não forma membros passivos, mas sim ministros ativos. Aqui, o discípulo recebe ensino sistemático, descobre seus dons espirituais, forja o caráter e é treinado por meio do exemplo (o famoso "vida na vida") para assumir responsabilidades no Reino.
+                </p>
+
+                <div class="dna-showcase-footer">
+                  <span class="dna-impact">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                      <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    Propósito: Descobrir dons, forjar caráter e capacitar líderes
+                  </span>
+
+                  <div class="dna-nav-controls">
+                    <button class="btn-dna-nav btn-dna-prev" data-goto="dna-panel-consolidar" aria-label="Voltar para Consolidar">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
+                      <span>2. Consolidar</span>
+                    </button>
+                    <button class="btn-dna-nav btn-dna-next" data-goto="dna-panel-enviar" aria-label="Avançar para Enviar">
+                      <span>Próximo (4. Enviar)</span>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="9 18 15 12 9 6" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Painel 4: Enviar -->
+            <div class="dna-single-panel" id="dna-panel-enviar" role="tabpanel" aria-labelledby="tab-dna-enviar">
+              <div class="dna-card-showcase">
+                <div class="dna-showcase-header">
+                  <div class="dna-step-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="22" y1="2" x2="11" y2="13" />
+                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                    </svg>
+                    <span>4º Pilar da Visão</span>
+                  </div>
+                  <span class="dna-tag-highlight" style="background:#fef3c7; color:#b45309; border-color:#fde68a;">Multiplicação Saudável</span>
+                </div>
+
+                <h4 class="dna-showcase-title">Enviar: Multiplicando Líderes e Abrindo Novos Lares</h4>
+                <p class="dna-showcase-text">
+                  Uma célula saudável, assim como um organismo vivo, cresce e se multiplica. A multiplicação não é tratada como divisão, mas como o envio alegre e estratégico de líderes que foram treinados para abrir novas frentes, pastorear novas pessoas e reiniciar o ciclo.
+                </p>
+
+                <div class="dna-showcase-footer">
+                  <span class="dna-impact">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                      <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    Propósito: Frutificar, pastorear novas vidas e expandir o Reino
+                  </span>
+
+                  <div class="dna-nav-controls">
+                    <button class="btn-dna-nav btn-dna-prev" data-goto="dna-panel-treinar" aria-label="Voltar para Treinar">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                        <polyline points="15 18 9 12 15 6" />
+                      </svg>
+                      <span>3. Treinar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Grade de Células por Faixa de Idade -->
         <div class="cells-grid" id="cells-cards-container">
-          <!-- Célula 1: Kids -->
+          <!-- Card 1: Rede Kids -->
           <div class="cell-card" data-cell-category="kids">
             <div class="cell-header-top">
-              <span class="cell-age-badge kids">Crianças (0 a 11 anos)</span>
-              <span class="cell-day-pill">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                Sextas às 19h30
-              </span>
+              <span class="cell-age-badge kids">5 a 9 anos</span>
             </div>
-            <h3 class="cell-name">Célula GraçaKids</h3>
-            <p class="cell-desc">Encontros alegres onde as crianças aprendem os caminhos do Senhor através de
-              historinhas bíblicas lúdicas, memorização de versículos, fantoches e brincadeiras com tios capacitados.
-            </p>
+            <h3 class="cell-name">Rede Kids</h3>
+            <div class="cell-day-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Quintas às 19h30</span>
+            </div>
+            <p class="cell-desc">Espaço alegre e acolhedor onde as crianças aprendem os caminhos de Deus, criam amizades saudáveis e crescem na fé através de momentos dinâmicos.</p>
             <div class="cell-meta-list">
               <div class="cell-meta-item">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <strong>Bairros:</strong> Intermares, Bessa e Cabedelo
+                <div><strong>Bairro:</strong> Intermares</div>
               </div>
               <div class="cell-meta-item">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                   <circle cx="12" cy="7" r="4" />
                 </svg>
-                <strong>Líderes:</strong> Tias Juliana & Rebeca
+                <div><strong>Líderes:</strong> Adeildes, Andreia e Vanderlei</div>
               </div>
             </div>
-            <button class="btn btn-secondary btn-sm btn-connect-cell" data-cell="Célula GraçaKids (0 a 11 anos)">
-              Quero Conhecer Esta Célula
-            </button>
           </div>
 
-          <!-- Célula 2: Teens -->
+          <!-- Card 2: Rede Teen -->
           <div class="cell-card" data-cell-category="teens">
             <div class="cell-header-top">
-              <span class="cell-age-badge teens">Adolescentes (12 a 17 anos)</span>
-              <span class="cell-day-pill">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                Sextas às 19h30
-              </span>
+              <span class="cell-age-badge teens">10 a 13 anos</span>
             </div>
-            <h3 class="cell-name">Célula Conexão Teens</h3>
-            <p class="cell-desc">Lugar de amizades sólidas e bate-papo sem rodeios sobre escola, identidade, amizades,
-              pressão das redes e amor a Jesus, com muita pizza, jogos e descontração.</p>
+            <h3 class="cell-name">Rede Teen</h3>
+            <div class="cell-day-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Sábados</span>
+            </div>
+            <p class="cell-desc">Ambiente dinâmico feito especialmente para pré-adolescentes fortalecerem sua fé em Cristo, tirarem dúvidas e caminharem juntos com alegria.</p>
             <div class="cell-meta-list">
               <div class="cell-meta-item">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <strong>Bairros:</strong> Intermares, Manaíra e Bessa
-              </div>
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <strong>Líderes:</strong> Lucas & Bia
+                <div><strong>Bairro:</strong> Intermares</div>
               </div>
             </div>
-            <button class="btn btn-secondary btn-sm btn-connect-cell" data-cell="Célula Conexão Teens (12 a 17 anos)">
-              Quero Conhecer Esta Célula
-            </button>
           </div>
 
-          <!-- Célula 3: Jovens -->
+          <!-- Card 3: Rede Black -->
           <div class="cell-card" data-cell-category="youth">
             <div class="cell-header-top">
-              <span class="cell-age-badge youth">Jovens (18 a 29 anos)</span>
-              <span class="cell-day-pill">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                Quintas & Sextas às 20h
-              </span>
+              <span class="cell-age-badge youth">14 a 17 anos</span>
             </div>
-            <h3 class="cell-name">Célula Geração Viva</h3>
-            <p class="cell-desc">Reúne universitários, solteiros e jovens profissionais para discutir propósito de vida,
-              carreira, namoro cristão e impacto missionário com comunhão calorosa.</p>
+            <h3 class="cell-name">Rede Black</h3>
+            <div class="cell-day-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Sextas e Sábados</span>
+            </div>
+            <p class="cell-desc">Lugar de conexão real para adolescentes debaterem temas práticos do dia a dia, aprofundarem a fé, orarem uns pelos outros e viverem o evangelho.</p>
             <div class="cell-meta-list">
               <div class="cell-meta-item">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <strong>Bairros:</strong> Intermares, Bessa e Cabedelo
-              </div>
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <strong>Líderes:</strong> Pedro & Carol
+                <div><strong>Bairro:</strong> Intermares</div>
               </div>
             </div>
-            <button class="btn btn-secondary btn-sm btn-connect-cell" data-cell="Célula Geração Viva (Jovens 18 a 29)">
-              Quero Conhecer Esta Célula
-            </button>
           </div>
 
-          <!-- Célula 4: Casais e Famílias -->
-          <div class="cell-card" data-cell-category="family">
+          <!-- Card 4: Células de Adultos -->
+          <div class="cell-card" data-cell-category="adults">
             <div class="cell-header-top">
-              <span class="cell-age-badge family">Casais & Famílias</span>
-              <span class="cell-day-pill">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                Terças & Quintas às 20h
-              </span>
+              <span class="cell-age-badge adults">18+ anos</span>
             </div>
-            <h3 class="cell-name">Célula Família no Altar</h3>
-            <p class="cell-desc">Ambiente para casais e famílias fortalecerem os laços conjugais, aprenderem princípios
-              de criação de filhos, finanças do lar e compartilharem vitórias juntos.</p>
+            <h3 class="cell-name">Células de Adultos</h3>
+            <div class="cell-day-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Todos os Dias</span>
+            </div>
+            <p class="cell-desc">Grupos de comunhão, oração mútua, cuidado pastoral e estudo bíblico prático com encontros em diversos dias da semana para acolher você e sua família.</p>
             <div class="cell-meta-list">
               <div class="cell-meta-item">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <strong>Bairros:</strong> Intermares, Renascença e Bessa
-              </div>
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <strong>Líderes:</strong> Diác. Marcos & Renata
+                <div><strong>Bairro:</strong> Intermares</div>
               </div>
             </div>
-            <button class="btn btn-secondary btn-sm btn-connect-cell" data-cell="Célula Família no Altar (Casais)">
-              Quero Conhecer Esta Célula
-            </button>
-          </div>
-
-          <!-- Célula 5: Mulheres -->
-          <div class="cell-card" data-cell-category="women">
-            <div class="cell-header-top">
-              <span class="cell-age-badge women">Mulheres de Fé</span>
-              <span class="cell-day-pill">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                Quartas às 15h & Terças às 20h
-              </span>
-            </div>
-            <h3 class="cell-name">Célula Mulheres Edificadas</h3>
-            <p class="cell-desc">Cuidado mútuo, oração fervorosa pelas famílias, cura das emoções e fortalecimento
-              espiritual entre mulheres de todas as idades num ambiente acolhedor.</p>
-            <div class="cell-meta-list">
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-                <strong>Bairros:</strong> Intermares, Manaíra e Cabedelo
-              </div>
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <strong>Líderes:</strong> Pra. Helena & Diac. Sandra
-              </div>
-            </div>
-            <button class="btn btn-secondary btn-sm btn-connect-cell" data-cell="Célula Mulheres Edificadas">
-              Quero Conhecer Esta Célula
-            </button>
-          </div>
-
-          <!-- Célula 6: Homens -->
-          <div class="cell-card" data-cell-category="men">
-            <div class="cell-header-top">
-              <span class="cell-age-badge men">Homens de Honra</span>
-              <span class="cell-day-pill">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                Terças-feiras às 20h
-              </span>
-            </div>
-            <h3 class="cell-name">Célula Homens de Coragem</h3>
-            <p class="cell-desc">Reunião exclusiva para homens vencerem desafios diários, desenvolverem liderança
-              servidora no lar e no trabalho e orarem uns pelos outros com cumplicidade.</p>
-            <div class="cell-meta-list">
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-                <strong>Bairros:</strong> Intermares e Bessa
-              </div>
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <strong>Líderes:</strong> Pr. Ricardo & Carlos Silva
-              </div>
-            </div>
-            <button class="btn btn-secondary btn-sm btn-connect-cell" data-cell="Célula Homens de Coragem">
-              Quero Conhecer Esta Célula
-            </button>
-          </div>
-
-          <!-- Célula 7: Melhor Idade -->
-          <div class="cell-card" data-cell-category="senior">
-            <div class="cell-header-top">
-              <span class="cell-age-badge senior">Melhor Idade (60+ anos)</span>
-              <span class="cell-day-pill">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-                Quintas às 16h00
-              </span>
-            </div>
-            <h3 class="cell-name">Célula Vida Plena (Sênior)</h3>
-            <p class="cell-desc">Encontro vespertino repleto de alegria, oração, estudo bíblico focado na sabedoria da
-              maturidade, testemunhos de vida e chá da tarde com muito carinho.</p>
-            <div class="cell-meta-list">
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-                <strong>Bairros:</strong> Intermares e Bessa
-              </div>
-              <div class="cell-meta-item">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <strong>Líderes:</strong> Dona Lourdes & Seu Antônio
-              </div>
-            </div>
-            <button class="btn btn-secondary btn-sm btn-connect-cell" data-cell="Célula Vida Plena (60+ Sênior)">
-              Quero Conhecer Esta Célula
-            </button>
           </div>
         </div>
 
@@ -1142,339 +1178,6 @@
       </div>
     </section>
 
-    <!-- ==========================================
-         PROGRAMAÇÃO DOS CULTOS
-         ========================================== -->
-    <section class="section-padding bg-soft" id="cultos">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Agenda Semanal é Templo & Lares</div>
-          <h2 class="section-title">Nossas Celebrações & Encontros</h2>
-          <p class="section-subtitle">Momentos de grande adoração coletiva no templo e comunhão íntima nas células
-            durante a semana.</p>
-        </div>
-
-        <div class="schedule-grid">
-          <!-- Domingo Manhã -->
-          <div class="schedule-card">
-            <div class="schedule-badge">Domingo Manhã</div>
-            <h3 class="schedule-day">Culto de Celebração & EBD</h3>
-            <div class="schedule-time">10:00 <span>hs</span></div>
-            <p class="schedule-desc">Reunião matutina de todas as células com louvor congregacional e classes bíblicas
-              dinâmicas para todas as idades.</p>
-
-            <div class="schedule-features">
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Ministério Infantil GraçaKids
-              </div>
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Café da Comunhão às 09:30
-              </div>
-            </div>
-
-            <button class="btn btn-secondary btn-sm btn-calendar" data-event="Culto de Celebração Manhã"
-              data-day="Domingo" data-time="10:00">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
-              Adicionar ao Calendário
-            </button>
-          </div>
-
-          <!-- Domingo Noite (Destaque) -->
-          <div class="schedule-card featured">
-            <div class="schedule-badge" style="background:#fef3c7; color:#b45309;">Principal Celebração</div>
-            <h3 class="schedule-day">Culto da Família & Celebração</h3>
-            <div class="schedule-time">18:00 <span>hs</span></div>
-            <p class="schedule-desc">Grande celebração de todas as famílias e células da igreja com adoração profunda,
-              testemunhos e mensagem pastoral.</p>
-
-            <div class="schedule-features">
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                GraçaKids & Berçário Ativo
-              </div>
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Transmissão Ao Vivo no YouTube
-              </div>
-            </div>
-
-            <button class="btn btn-primary btn-sm btn-calendar" data-event="Culto da Família Noite" data-day="Domingo"
-              data-time="18:00">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
-              Adicionar ao Calendário
-            </button>
-          </div>
-
-          <!-- Células nos Lares Durante a Semana -->
-          <div class="schedule-card"
-            style="border-color: #059669; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);">
-            <div class="schedule-badge" style="background:#d1fae5; color:#065f46;">Nos Lares é Semana</div>
-            <h3 class="schedule-day">Encontros de Célula</h3>
-            <div class="schedule-time" style="color:#059669;">20:00 <span>hs</span></div>
-            <p class="schedule-desc">Reuniões nos lares distribuídas por bairros e faixas etárias (Terças, Quintas e
-              Sextas). Comunhão, estudo e oração mútua.</p>
-
-            <div class="schedule-features">
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Grupos por faixa etária (Kids a 60+)
-              </div>
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Mais de 45 lares abertos na cidade
-              </div>
-            </div>
-
-            <a href="#celulas" class="btn btn-secondary btn-sm" style="border-color: #059669; color: #065f46;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-              Ver Todas as Células
-            </a>
-          </div>
-
-          <!-- Quarta-Feira -->
-          <div class="schedule-card">
-            <div class="schedule-badge">No Templo</div>
-            <h3 class="schedule-day">Quarta da Palavra & Oração</h3>
-            <div class="schedule-time">19:30 <span>hs</span></div>
-            <p class="schedule-desc">Estudo bíblico aprofundado, intercessão pelas células, pedidos de oração da semana
-              e atendimento pastoral.</p>
-
-            <div class="schedule-features">
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Intercessão & Célamor pelas Famílias
-              </div>
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Atendimento Pastoral pós-culto
-              </div>
-            </div>
-
-            <button class="btn btn-secondary btn-sm btn-calendar" data-event="Quarta da Palavra e Oração"
-              data-day="Quarta-feira" data-time="19:30">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
-              Adicionar ao Calendário
-            </button>
-          </div>
-
-          <!-- Sábado Jovens -->
-          <div class="schedule-card">
-            <div class="schedule-badge">Juventude & Teens</div>
-            <h3 class="schedule-day">Conexão Jovem & Teens</h3>
-            <div class="schedule-time">19:30 <span>hs</span></div>
-            <p class="schedule-desc">Celebração de todas as células de jovens e adolescentes com louvor vibrante,
-              palavra contemporânea e hamburgueria.</p>
-
-            <div class="schedule-features">
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Louvor da Juventude IEBI
-              </div>
-              <div class="schedule-feature-item">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Comunhão Pàs-Culto
-              </div>
-            </div>
-
-            <button class="btn btn-secondary btn-sm btn-calendar" data-event="Conexão Jovem e Teens" data-day="Sábado"
-              data-time="19:30">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                <line x1="16" y1="2" x2="16" y2="6" />
-                <line x1="8" y1="2" x2="8" y2="6" />
-                <line x1="3" y1="10" x2="21" y2="10" />
-              </svg>
-              Adicionar ao Calendário
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         MINISTÉRIOS & COMUNIDADE
-         ========================================== -->
-    <section class="section-padding" id="ministerios">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Nossos Ministérios</div>
-          <h2 class="section-title">Existe um lugar feito para você servir e crescer</h2>
-          <p class="section-subtitle">Explore as diferentes frentes da igreja e descubra onde seus dons e talentos podem
-            abençoar vidas.</p>
-        </div>
-
-        <!-- Filtros de Ministérios -->
-        <div class="ministry-filters">
-          <button class="filter-btn active" data-filter="all">Todos os Ministérios</button>
-          <button class="filter-btn" data-filter="kids">Crianças (Kids)</button>
-          <button class="filter-btn" data-filter="youth">Jovens & Teens</button>
-          <button class="filter-btn" data-filter="family">Famílias & Casais</button>
-          <button class="filter-btn" data-filter="action">Ação Social</button>
-          <button class="filter-btn" data-filter="worship">Louvor & Artes</button>
-        </div>
-
-        <!-- Grade de Ministérios -->
-        <div class="ministries-grid">
-          <!-- Ministério Kids -->
-          <div class="ministry-card" data-category="kids">
-            <div class="ministry-img-box">
-              <img src="assets/images/kids_ministry.webp" width="800" height="600"  alt="Crianças no Ministério Infantil GraçaKids" loading="lazy">
-              <span class="ministry-badge">0 a 11 anos</span>
-            </div>
-            <div class="ministry-body">
-              <h3 class="ministry-title">GraçaKids</h3>
-              <p class="ministry-desc">Um espaço lúdico, seguro e alegre onde as crianças aprendem os valores de Jesus
-                através de histórias, teatro e brincadeiras.</p>
-              <div class="ministry-meta">
-                <div class="ministry-schedule-tag">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  Domingos 10h e 18h
-                </div>
-                <span>Tias Ana & Célara</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Geração Jovem -->
-          <div class="ministry-card" data-category="youth">
-            <div class="ministry-img-box">
-              <img src="assets/images/hero_worship.webp" width="800" height="600"  alt="Juventude reunida" loading="lazy">
-              <span class="ministry-badge">14 a 28 anos</span>
-            </div>
-            <div class="ministry-body">
-              <h3 class="ministry-title">Geração Viva (Jovens)</h3>
-              <p class="ministry-desc">Juventude apaixonada pelo Reino de Deus, fortalecendo sua identidade em Cristo,
-                organizando retiros, conferências e ações evangelísticas.</p>
-              <div class="ministry-meta">
-                <div class="ministry-schedule-tag">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  Sábados às 19:30
-                </div>
-                <span>Líderes Pedro & Carol</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Ação Social -->
-          <div class="ministry-card" data-category="action">
-            <div class="ministry-img-box">
-              <img src="assets/images/community_action.webp" width="800" height="600"  alt="Voluntários da igreja distribuindo cestas e donativos"
-                loading="lazy">
-              <span class="ministry-badge">Voluntariado</span>
-            </div>
-            <div class="ministry-body">
-              <h3 class="ministry-title">Mãos que Acolhem (Social)</h3>
-              <p class="ministry-desc">Distribuição de cestas de alimentos, agasalhos, suporte psicológico e
-                profissionalizante para famílias em vulnerabilidade social.</p>
-              <div class="ministry-meta">
-                <div class="ministry-schedule-tag">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  Sábados Quinzenais
-                </div>
-                <span>Coordenação Social</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Casais & Famílias -->
-          <div class="ministry-card" data-category="family">
-            <div class="ministry-img-box">
-              <img src="assets/images/pastor_welcome.webp" width="800" height="600"  alt="Ministério de Casais e Família" loading="lazy">
-              <span class="ministry-badge">Casais & Lares</span>
-            </div>
-            <div class="ministry-body">
-              <h3 class="ministry-title">Ministério de Famílias</h3>
-              <p class="ministry-desc">Encontros especiais de casais, jantares românticos, mentoria para noivos e cursos
-                de finanças familiares com base bíblica.</p>
-              <div class="ministry-meta">
-                <div class="ministry-schedule-tag">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  1é Sexta do Mês
-                </div>
-                <span>Diác. Marcos & Renata</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Louvor & Artes -->
-          <div class="ministry-card" data-category="worship">
-            <div class="ministry-img-box">
-              <img src="assets/images/hero_worship.webp" width="800" height="600"  alt="Banda e equipe de louvor e mídia" loading="lazy">
-              <span class="ministry-badge">Mêsica & Mídia</span>
-            </div>
-            <div class="ministry-body">
-              <h3 class="ministry-title">Louvor, Som & Transmissão</h3>
-              <p class="ministry-desc">Músicos, cantores, sonoplastas e equipe de mídia dedicados a conduzir a igreja em
-                adoração excelente com simplicidade e reverência.</p>
-              <div class="ministry-meta">
-                <div class="ministry-schedule-tag">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  Ensaios às Quintas 20h
-                </div>
-                <span>Pr. Gabriel Lima</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ==========================================
          MENSAGENS & PODCAST (ÁUDIO INTERATIVO)
@@ -1553,7 +1256,8 @@
 
           <!-- Prévia em Vídeo Simulada -->
           <div class="sermon-video-preview">
-            <img src="assets/images/hero_worship.webp" width="800" height="600"  alt="Vídeo da pregação no canal do YouTube">
+            <img src="assets/images/hero_worship.webp" width="800" height="600"
+              alt="Vídeo da pregação no canal do YouTube">
             <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="video-play-overlay"
               aria-label="Assistir pregação no YouTube">
               <div class="video-play-btn">
@@ -1806,12 +1510,14 @@
               <div class="form-row">
                 <div class="form-group">
                   <label for="prayer-name" class="form-label">Seu Nome Completo *</label>
-                  <input type="text" id="prayer-name" aria-label="Seu nome" class="form-control" placeholder="Ex: Maria dos Santos" required>
+                  <input type="text" id="prayer-name" aria-label="Seu nome" class="form-control"
+                    placeholder="Ex: Maria dos Santos" required>
                 </div>
 
                 <div class="form-group">
                   <label for="prayer-phone" class="form-label">WhatsApp para Contato *</label>
-                  <input type="tel" id="prayer-phone" aria-label="Seu n?mero de telefone ou WhatsApp" class="form-control" placeholder="(11) 99999-9999" required>
+                  <input type="tel" id="prayer-phone" aria-label="Seu n?mero de telefone ou WhatsApp"
+                    class="form-control" placeholder="(11) 99999-9999" required>
                 </div>
               </div>
 
@@ -2161,8 +1867,8 @@
         <div class="footer-brand">
           <a href="#hero" class="logo-brand footer-logo-brand"
             aria-label="IEBI - Igreja Evangélica Batista de Intermares">
-            <img src="assets/LogoBranco.webp" width="200" height="50"  alt="IEBI - Igreja Evangélica Batista de Intermares"
-              class="site-logo-footer-img">
+            <img src="assets/LogoBranco.webp" width="200" height="50"
+              alt="IEBI - Igreja Evangélica Batista de Intermares" class="site-logo-footer-img">
           </a>
           <p class="footer-brand-desc">
             Uma igreja acolhedora, centrada em Cristo, comprometida com a pregação bíblica e o cuidado genuíno com o
@@ -2210,9 +1916,8 @@
             <li><a href="#hero" class="footer-link">Início</a></li>
             <li><a href="#sobre" class="footer-link">Sobre Nós</a></li>
             <li><a href="#celulas" class="footer-link">Células nos Lares</a></li>
-            <li><a href="#cultos" class="footer-link">Horários & Cultos</a></li>
-            <li><a href="#ministerios" class="footer-link">Ministérios</a></li>
-            <li><a href="#mensagens" class="footer-link">Mensagens em áudio</a></li>
+            <li><a href="#mensagens" class="footer-link">Mensagens em Áudio</a></li>
+            <li><a href="#eventos" class="footer-link">Eventos & Conferências</a></li>
           </ul>
         </div>
 
@@ -2326,13 +2031,14 @@
 
         <div class="form-group">
           <label class="form-label">Seu Nome *</label>
-          <input type="text" id="event-input-user-name" aria-label="Seu nome completo" class="form-control" placeholder="Digite seu nome completo"
-            required>
+          <input type="text" id="event-input-user-name" aria-label="Seu nome completo" class="form-control"
+            placeholder="Digite seu nome completo" required>
         </div>
 
         <div class="form-group">
           <label class="form-label">WhatsApp *</label>
-          <input type="tel" id="event-input-user-phone" aria-label="Seu telefone ou WhatsApp" class="form-control" placeholder="(11) 99999-9999" required>
+          <input type="tel" id="event-input-user-phone" aria-label="Seu telefone ou WhatsApp" class="form-control"
+            placeholder="(11) 99999-9999" required>
         </div>
 
         <button type="submit" class="btn btn-primary" style="width: 100%;">Confirmar Minha Participação</button>
@@ -2352,8 +2058,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="app.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
-

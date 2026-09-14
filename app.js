@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDailyVerses();
   initCalendarButtons();
   initInteractiveTimeline();
+  initInteractiveDnaPillars();
 });
 
 /* ==========================================================================
@@ -864,4 +865,167 @@ function initInteractiveTimeline() {
   // Inicializa obrigatoriamente no ano de 1998
   activateMilestone('panel-1998');
 }
+
+/* ==========================================================================
+   14. STEPPER & SLIDE INTERATIVO DOS 4 PILARES DA VISÃO CELULAR
+   ========================================================================== */
+function initInteractiveDnaPillars() {
+  const steps = document.querySelectorAll('.dna-stepper-step');
+  const panels = document.querySelectorAll('.dna-single-panel');
+  const progressLine = document.getElementById('dna-stepper-progress');
+  const navBtns = document.querySelectorAll('.btn-dna-nav');
+  const displayContainer = document.getElementById('dna-single-display');
+
+  if (!steps.length || !panels.length) return;
+
+  let currentIndex = 0;
+
+  function centerActiveStep(activeStepEl) {
+    const stepperContainer = document.querySelector('.dna-stepper-container');
+    if (!stepperContainer || !activeStepEl) return;
+
+    const containerWidth = stepperContainer.clientWidth;
+    const stepLeft = activeStepEl.offsetLeft;
+    const stepWidth = activeStepEl.offsetWidth;
+
+    const targetScrollLeft = stepLeft - (containerWidth / 2) + (stepWidth / 2);
+
+    stepperContainer.scrollTo({
+      left: Math.max(0, targetScrollLeft),
+      behavior: 'smooth'
+    });
+  }
+
+  function activatePillar(targetPanelId) {
+    let targetIndex = 0;
+    let activeStepEl = null;
+
+    // 1. Atualiza steps do stepper
+    steps.forEach((step, idx) => {
+      const isTarget = step.getAttribute('data-target') === targetPanelId;
+      step.classList.toggle('active', isTarget);
+      step.setAttribute('aria-selected', isTarget);
+      if (isTarget) {
+        targetIndex = idx;
+        activeStepEl = step;
+      }
+    });
+
+    currentIndex = targetIndex;
+
+    // 2. Centraliza suavemente o pilar ativo na tela (mobile)
+    if (activeStepEl) {
+      centerActiveStep(activeStepEl);
+    }
+
+    // 3. Atualiza painéis de exibição
+    panels.forEach(panel => {
+      const isTarget = panel.getAttribute('id') === targetPanelId;
+      panel.classList.toggle('active', isTarget);
+    });
+
+    // 4. Atualiza linha de progresso
+    if (progressLine && steps.length > 1) {
+      const progressPercent = (targetIndex / (steps.length - 1)) * 100;
+      progressLine.style.width = `${progressPercent}%`;
+    }
+  }
+
+  function nextPillar() {
+    const nextIndex = (currentIndex + 1) % steps.length;
+    const targetId = steps[nextIndex].getAttribute('data-target');
+    if (targetId) activatePillar(targetId);
+  }
+
+  function prevPillar() {
+    const prevIndex = (currentIndex - 1 + steps.length) % steps.length;
+    const targetId = steps[prevIndex].getAttribute('data-target');
+    if (targetId) activatePillar(targetId);
+  }
+
+  // --- Cliques nos passos do stepper ---
+  steps.forEach(step => {
+    step.addEventListener('click', () => {
+      const targetId = step.getAttribute('data-target');
+      if (targetId) activatePillar(targetId);
+    });
+  });
+
+  // --- Cliques nos botões de navegação anterior / próximo ---
+  navBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const gotoId = btn.getAttribute('data-goto');
+      if (gotoId) activatePillar(gotoId);
+    });
+  });
+
+  // --- Gestos de Arrastar (Drag) & Swipe (Touch) ---
+  if (displayContainer) {
+    let startX = 0;
+    let startY = 0;
+    let isDragging = false;
+    let hasMoved = false;
+
+    // Mouse Drag (Desktop)
+    displayContainer.addEventListener('mousedown', (e) => {
+      if (e.target.closest('button') || e.target.closest('a')) return;
+      isDragging = true;
+      hasMoved = false;
+      startX = e.clientX;
+      displayContainer.classList.add('grabbing');
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const diffX = e.clientX - startX;
+      if (Math.abs(diffX) > 10) {
+        hasMoved = true;
+      }
+    });
+
+    window.addEventListener('mouseup', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      displayContainer.classList.remove('grabbing');
+      const diffX = e.clientX - startX;
+      if (hasMoved && Math.abs(diffX) > 45) {
+        if (diffX < 0) {
+          nextPillar();
+        } else {
+          prevPillar();
+        }
+      }
+    });
+
+    // Touch Swipe (Mobile / Tablets)
+    displayContainer.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+      }
+    }, { passive: true });
+
+    displayContainer.addEventListener('touchend', (e) => {
+      if (e.changedTouches.length === 1) {
+        const endX = e.changedTouches[0].clientX;
+        const endY = e.changedTouches[0].clientY;
+        const diffX = endX - startX;
+        const diffY = endY - startY;
+
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+          if (diffX < 0) {
+            nextPillar();
+          } else {
+            prevPillar();
+          }
+        }
+      }
+    }, { passive: true });
+  }
+
+  // Inicializa obrigatoriamente no 1º pilar (Ganhar)
+  activatePillar('dna-panel-ganhar');
+}
+
 
