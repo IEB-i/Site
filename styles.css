@@ -1565,40 +1565,88 @@ ol {
 }
 
 .cells-structure-card {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: var(--radius-lg);
-  padding: 1.35rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1.35rem;
+  box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.3);
 }
 
 .cells-structure-title {
   font-size: 1.05rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.55rem;
+  letter-spacing: -0.01em;
+}
+
+.cells-structure-title svg {
+  color: #fbbf24;
+  flex-shrink: 0;
 }
 
 .cells-steps-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  color: #e2e8f0;
+  gap: 0.55rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.cells-steps-list li {
+.cells-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.55rem 0.75rem;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.cells-step-item:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(251, 191, 36, 0.25);
+  transform: translateX(3px);
+}
+
+.cells-step-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
 }
 
-.cells-steps-list li svg {
-  color: #fbbf24;
-  flex-shrink: 0;
+.cells-step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.cells-step-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.cells-step-desc {
+  font-size: 0.8125rem;
+  color: #cbd5e1;
+  line-height: 1.4;
 }
 
 /* Pilares do DNA Celular - Stepper & Showcase Interativo */
@@ -3341,6 +3389,11 @@ textarea.form-control {
 
   .dropdown-item {
     padding: 0.6rem 0.75rem;
+  }
+
+  .cells-intro-banner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
