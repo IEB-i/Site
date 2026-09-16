@@ -1512,56 +1512,109 @@ ol {
 .cells-intro-banner {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   border-radius: var(--radius-xl);
-  padding: 1.5rem 1.85rem;
+  padding: 1.65rem 1.85rem;
   color: #ffffff;
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow-xl);
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 1.75rem;
-  align-items: flex-start;
+  align-items: stretch;
+}
+
+.cells-intro-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.15rem 0;
+}
+
+.cells-intro-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.cells-intro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.28rem 0.75rem;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  border-radius: 9999px;
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.cells-intro-badge svg {
+  color: #fbbf24;
 }
 
 .cells-intro-quote {
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  font-weight: 700;
   color: #fbbf24;
-  line-height: 1.55;
-  margin-bottom: 0.5rem;
+  line-height: 1.38;
+  letter-spacing: -0.01em;
+  margin: 0;
 }
 
 .cells-intro-text {
   font-size: 0.965rem;
   color: #cbd5e1;
-  line-height: 1.72;
-  margin-bottom: 0.85rem;
+  line-height: 1.68;
+  margin: 0;
 }
 
 .cells-stats-row {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
 }
 
-.cell-stat-item {
+.cell-stat-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg, 12px);
+  padding: 0.75rem 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.cell-stat-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(251, 191, 36, 0.25);
+  transform: translateY(-2px);
 }
 
 .cell-stat-num {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: 1.65rem;
   font-weight: 800;
   color: #fbbf24;
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 .cell-stat-label {
-  font-size: 0.8125rem;
+  font-size: 0.72rem;
   color: #94a3b8;
-  margin-top: 0.25rem;
+  margin-top: 0.35rem;
   text-transform: uppercase;
   font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
 }
 
 .cells-structure-card {
